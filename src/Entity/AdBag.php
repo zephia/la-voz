@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the OLX Feed Generator package.
+ * This file is part of the La Voz Feed Generator package.
  *
  * (c) Zephia <info@zephia.com.ar>
  *
