@@ -1,0 +1,10 @@
+Zephia\LaVozFeed\Entity\AdBag:
+  access_type: public_method
+  exclusion_policy: NONE
+  properties:
+    ads:
+      type: "array<Zephia\\LaVozFeed\\Entity\\Ad>"
+      xml_list:
+        entry_name: ad
+        inline: true
+  xml_root_name: data
