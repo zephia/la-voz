@@ -1,0 +1,13 @@
+Zephia\LaVozFeed\Entity\Price:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    currency:
+      type: "string"
+      xml_attribute: true
+    hidden:
+      type: "boolean"
+      xml_attribute: true
+    value:
+      type: "string"
+      xml_value: true

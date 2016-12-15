@@ -1,0 +1,36 @@
+Zephia\LaVozFeed\Entity\Ad:
+  access_type: public_method
+  accessor_order: custom
+  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify]
+  exclusion_policy: NONE
+  properties:
+    id:
+      type: "string"
+    city:
+      type: "string"
+    content:
+      type: "string"
+    email:
+      type: "Zephia\\LaVozFeed\\Entity\\Email"
+    modify:
+      type: "DateTime<'Y-m-d H:i:s'>"
+    operation:
+      type: "string"
+    payment:
+      type: "string"
+    phone:
+      type: "Zephia\\LaVozFeed\\Entity\\Phone"
+    pictures:
+      type: "array<Zephia\\LaVozFeed\\Entity\\Picture>"
+      xml_list:
+        entry_name: picture
+    price:
+      type: "Zephia\\LaVozFeed\\Entity\\Price"
+    region:
+      type: "string"
+    status:
+      type: "string"
+    title:
+      type: "string"
+    type:
+      type: "string"

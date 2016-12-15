@@ -1,0 +1,10 @@
+Zephia\LaVozFeed\Entity\District:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    district:
+      type: "string"
+      xml_value: true
+    zone:
+      type: "string"
+      xml_attribute: true

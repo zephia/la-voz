@@ -1,0 +1,10 @@
+Zephia\LaVozFeed\Entity\ContactMethod:
+  access_type: public_method
+  exclusion_policy: NONE
+  properties:
+    hidden:
+      type: "boolean"
+      xml_attribute: true
+    value:
+      type: "string"
+      xml_value: true

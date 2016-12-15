@@ -1,0 +1,7 @@
+Zephia\LaVozFeed\Entity\Picture:
+  access_type: public_method
+  exclusion_policy: ALL
+  properties:
+    picture:
+      type: "string"
+      xml_value: true

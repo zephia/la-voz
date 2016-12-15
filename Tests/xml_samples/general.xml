@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <ad>
+    <id><![CDATA[1]]></id>
+    <type><![CDATA[6257]]></type>
+    <title><![CDATA[Nokia 1100]]></title>
+    <content><![CDATA[Nokia 1100]]></content>
+    <region><![CDATA[Córdoba]]></region>
+    <city><![CDATA[Córdoba]]></city>
+    <phone hidden="true"><![CDATA[1234567890]]></phone>
+    <email hidden="true"><![CDATA[test@test.com]]></email>
+    <operation><![CDATA[venta]]></operation>
+    <status><![CDATA[nuevo]]></status>
+    <price currency="$" hidden="true"><![CDATA[1000]]></price>
+    <payment><![CDATA[contado]]></payment>
+    <district zone="centro"><![CDATA[Nueva Córdoba]]></district>
+    <pictures>
+      <picture><![CDATA[http://www.redusers.com/noticias/wp-content/uploads/2015/03/1100Nokia-650x450.jpg]]></picture>
+    </pictures>
+    <modify><![CDATA[2016-01-01 00:00:00]]></modify>
+  </ad>
+</data>
