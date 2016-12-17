@@ -1,0 +1,42 @@
+Zephia\LaVozFeed\Entity\Vehicle:
+  access_type: public_method
+  accessor_order: custom
+  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify, model, receives_lesser_value, year, kilometers, fuel, version, doors, transmission, segment, color, confort, security]
+  exclusion_policy: NONE
+  properties:
+    color:
+      type: "string"
+    confort:
+      type: "string"
+    doors:
+      type: "string"
+      serialized_name: "cant_puertas"
+    fuel:
+      type: "string"
+      serialized_name: "combustible"
+    kilometers:
+      type: "string"
+      serialized_name: "kilometros"
+    model:
+      type: "string"
+      serialized_name: "modelo"
+    version:
+      type: "string"
+    receives_lesser_value:
+      type: "string"
+      accessor:
+        getter: getReceivesLesserValue
+        setter: setReceivesLesserValue
+      serialized_name: "recibe_menor"
+    security:
+      type: "string"
+      serialized_name: "seguridad"
+    segment:
+      type: "string"
+      serialized_name: "segmento"
+    transmission:
+      type: "string"
+      serialized_name: "transmision"
+    year:
+      type: "string"
+      serialized_name: "usado_anio"

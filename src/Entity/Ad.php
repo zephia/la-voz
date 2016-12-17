@@ -9,6 +9,7 @@
  */
 
 namespace Zephia\LaVozFeed\Entity;
+
 use Zephia\LaVozFeed\Exception\LogicException;
 
 /**

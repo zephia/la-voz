@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <ad>
+    <id><![CDATA[11111111]]></id>
+    <type><![CDATA[6324]]></type>
+    <title><![CDATA[Vendo volkswagen fox en buen estado]]></title>
+    <content><![CDATA[Excelente estado, cubiertas nuevas. Llantas de aleación.]]></content>
+    <region><![CDATA[Córdoba]]></region>
+    <city><![CDATA[Córdoba]]></city>
+    <phone hidden="false"><![CDATA[157665566]]></phone>
+    <email hidden="true"><![CDATA[prueba@lavoz.com]]></email>
+    <operation><![CDATA[venta]]></operation>
+    <status><![CDATA[usado]]></status>
+    <price currency="U$S" hidden="true"><![CDATA[12000]]></price>
+    <payment><![CDATA[facilidades]]></payment>
+    <district><![CDATA[Valle Escondido]]></district>
+    <pictures>
+      <picture><![CDATA[http://www.sudominio.com/image.jpg]]></picture>
+    </pictures>
+    <modify><![CDATA[2013-04-10 15:40:05]]></modify>
+    <modelo><![CDATA[4043]]></modelo>
+    <recibe_menor><![CDATA[si]]></recibe_menor>
+    <usado_anio><![CDATA[2005]]></usado_anio>
+    <kilometros><![CDATA[24100]]></kilometros>
+    <combustible><![CDATA[Nafta]]></combustible>
+    <version><![CDATA[850]]></version>
+    <cant_puertas><![CDATA[3]]></cant_puertas>
+    <transmision><![CDATA[Manual]]></transmision>
+    <segmento><![CDATA[familiar]]></segmento>
+    <color><![CDATA[champagne]]></color>
+    <confort><![CDATA[aire acondicionado, stereo dvd, vidrios polarizados]]></confort>
+    <seguridad><![CDATA[3 luces de stop, blindado, alarma]]></seguridad>
+  </ad>
+</data>

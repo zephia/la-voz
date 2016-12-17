@@ -11,6 +11,7 @@ use Zephia\LaVozFeed\Entity\Email;
 use Zephia\LaVozFeed\Entity\Phone;
 use Zephia\LaVozFeed\Entity\Picture;
 use Zephia\LaVozFeed\Entity\Price;
+use Zephia\LaVozFeed\Entity\Vehicle;
 
 class DocumentXmlTest extends \PHPUnit_Framework_TestCase
 {
@@ -64,6 +65,49 @@ class DocumentXmlTest extends \PHPUnit_Framework_TestCase
         $xml_object = simplexml_load_string($xml_string);
 
         $xml_string_for_comparision = $this->getXml('general.xml');
+        $xml_object_for_comparision = simplexml_load_string($xml_string_for_comparision);
+
+        $this->assertEquals($xml_string, $xml_string_for_comparision);
+        $this->assertEquals($xml_object, $xml_object_for_comparision);
+    }
+
+    public function test_vehicle_xml()
+    {
+        $vehicle = (new Vehicle)
+            ->setId('11111111')
+            ->setCity('Córdoba')
+            ->setColor('champagne')
+            ->setConfort('aire acondicionado, stereo dvd, vidrios polarizados')
+            ->setContent('Excelente estado, cubiertas nuevas. Llantas de aleación.')
+            ->setDistrict((new District)->setDistrict('Valle Escondido'))
+            ->setDoors(3)
+            ->setEmail((new Email)->setEmail('prueba@lavoz.com')->setHidden(true))
+            ->setFuel('Nafta')
+            ->setKilometers(24100)
+            ->setModel('4043')
+            ->setModify(new \DateTime('2013-04-10 15:40:05'))
+            ->setOperation('venta')
+            ->setPayment('facilidades')
+            ->setPhone((new Phone)->setPhone('157665566'))
+            ->setPrice((new Price)->setCurrency('U$S')->setHidden(true)->setValue(12000))
+            ->addPicture(
+                (new Picture)
+                    ->setPicture('http://www.sudominio.com/image.jpg')
+            )
+            ->setReceivesLesserValue('si')
+            ->setRegion('Córdoba')
+            ->setSecurity('3 luces de stop, blindado, alarma')
+            ->setSegment('familiar')
+            ->setStatus('usado')
+            ->setTitle('Vendo volkswagen fox en buen estado')
+            ->setTransmission('Manual')
+            ->setType('6324')
+            ->setVersion('850')
+            ->setYear(2005);
+        $xml_string = $this->document->generate((new AdBag)->addAd($vehicle));
+        $xml_object = simplexml_load_string($xml_string);
+
+        $xml_string_for_comparision = $this->getXml('vehicle.xml');
         $xml_object_for_comparision = simplexml_load_string($xml_string_for_comparision);
 
         $this->assertEquals($xml_string, $xml_string_for_comparision);
