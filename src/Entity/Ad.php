@@ -293,7 +293,7 @@ class Ad extends Entity
      *
      * @return Ad
      */
-    public function setPayment(string $payment)
+    public function setPayment($payment)
     {
         $this->payment = $payment;
         return $this;
