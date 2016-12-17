@@ -60,9 +60,11 @@ abstract class ContactMethod extends Entity
     public function getValue()
     {
         if (empty($this->value)) {
-            throw new LogicException(
-                sprintf(self::ERROR_MISSING_ATTRIBUTE_FORMAT, get_class($this)::ATTRIBUTE)
-            );
+            $class_name = get_class($this);
+            throw new LogicException(sprintf(
+                self::ERROR_MISSING_ATTRIBUTE_FORMAT,
+                $class_name::ATTRIBUTE
+            ));
         }
         return $this->value;
     }
