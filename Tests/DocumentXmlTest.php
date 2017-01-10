@@ -44,6 +44,7 @@ class DocumentXmlTest extends \PHPUnit_Framework_TestCase
     {
         $ad = (new Ad)
             ->setId('1')
+            ->setAdsType('premium')
             ->setCity('Córdoba')
             ->setContent('Nokia 1100')
             ->setDistrict((new District)->setDistrict('Nueva Córdoba')->setZone('centro'))
@@ -75,6 +76,7 @@ class DocumentXmlTest extends \PHPUnit_Framework_TestCase
     {
         $vehicle = (new Vehicle)
             ->setId('11111111')
+            ->setAdsType('premium')
             ->setCity('Córdoba')
             ->setColor('champagne')
             ->setConfort('aire acondicionado, stereo dvd, vidrios polarizados')

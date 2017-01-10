@@ -1,11 +1,16 @@
 Zephia\LaVozFeed\Entity\Ad:
   access_type: public_method
   accessor_order: custom
-  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify]
+  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify, ads_type]
   exclusion_policy: NONE
   properties:
     id:
       type: "string"
+    ads_type:
+      type: "string"
+      accessor:
+        getter: getAdsType
+        setter: setAdsType
     city:
       type: "string"
     content:

@@ -31,6 +31,8 @@ class AdTest extends \PHPUnit_Framework_TestCase
         $test_phone = new Phone;
         $this->assertEquals($ad, $ad->setId('test_id'));
         $this->assertEquals('test_id', $ad->getId());
+        $this->assertEquals($ad, $ad->setAdsType('test_ads_type'));
+        $this->assertEquals('test_ads_type', $ad->getAdsType());
         $this->assertEquals($ad, $ad->setCity('test_city'));
         $this->assertEquals('test_city', $ad->getCity());
         $this->assertEquals($ad, $ad->setContent('test_content'));
@@ -63,6 +65,7 @@ class AdTest extends \PHPUnit_Framework_TestCase
     {
         return [
             ['Id', 'id'],
+            ['AdsType', 'ads_type'],
             ['City', 'city'],
             ['Content', 'content'],
             ['Email', 'email'],

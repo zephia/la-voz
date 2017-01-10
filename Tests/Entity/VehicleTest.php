@@ -37,6 +37,8 @@ class VehicleTest extends \PHPUnit_Framework_TestCase
         $test_district = new District;
         $this->assertEquals($vehicle, $vehicle->setId('test_id'));
         $this->assertEquals('test_id', $vehicle->getId());
+        $this->assertEquals($vehicle, $vehicle->setAdsType('test_ads_type'));
+        $this->assertEquals('test_ads_type', $vehicle->getAdsType());
         $this->assertEquals($vehicle, $vehicle->setCity('test_city'));
         $this->assertEquals('test_city', $vehicle->getCity());
         $this->assertEquals($vehicle, $vehicle->setColor('test_color'));
@@ -93,6 +95,7 @@ class VehicleTest extends \PHPUnit_Framework_TestCase
     {
         return [
             ['Id', 'id'],
+            ['AdsType', 'ads_type'],
             ['City', 'city'],
             ['Content', 'content'],
             ['Email', 'email'],

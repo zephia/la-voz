@@ -28,6 +28,11 @@ class Ad extends Entity
     /**
      * @var string
      */
+    private $ads_type = '';
+
+    /**
+     * @var string
+     */
     private $city = '';
 
     /**
@@ -120,6 +125,34 @@ class Ad extends Entity
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * Get Ads Type
+     *
+     * @return string
+     */
+    public function getAdsType()
+    {
+        if (empty($this->ads_type)) {
+            throw new LogicException(
+                sprintf(self::ERROR_MISSING_ATTRIBUTE_FORMAT, 'ads_type')
+            );
+        }
+        return $this->ads_type;
+    }
+
+    /**
+     * Set Ads Type
+     *
+     * @param string $ads_type
+     *
+     * @return Ad
+     */
+    public function setAdsType($ads_type)
+    {
+        $this->ads_type = $ads_type;
         return $this;
     }
 

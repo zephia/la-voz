@@ -1,7 +1,7 @@
 Zephia\LaVozFeed\Entity\Vehicle:
   access_type: public_method
   accessor_order: custom
-  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify, model, receives_lesser_value, year, kilometers, fuel, version, doors, transmission, segment, color, confort, security]
+  custom_accessor_order: [id, type, title, content, region, city, phone, email, operation, status, price, payment, district, pictures, modify, ads_type, model, receives_lesser_value, year, kilometers, fuel, version, doors, transmission, segment, color, confort, security]
   exclusion_policy: NONE
   properties:
     color:
